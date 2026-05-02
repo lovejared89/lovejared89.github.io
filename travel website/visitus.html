@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid beige;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: beige;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: beige;
+  padding: 20px;
+}
+</style>
+</head>
+<body style ="background-color: beige;">
+    <h1>Visit Us</h1>
+    <nav>
+        <a href="travelwebsite.html">Home</a>
+        <a href="aboutus.html">About</a>
+        <a href="exhibits.html">Exhibits</a>
+        <a href="visitus.html">Visit Us</a>
+    </nav>
+    <h2>Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.1373200290977!2d-95.39032069999999!3d29.715781299999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bf8610513213%3A0x61f408cc441069f8!2sHouston%20Zoo!5e0!3m2!1sen!2sus!4v1777715553425!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>Located at 6200 Hermann Park Drive.</p>
+    <p>The Houston Zoo does not have its own parking lot but, there is free parking available in Hermann Park<br>
+    Parking fills up quite fast during holidays so be sure to make a plan before planning for your trip</p>
+    <h3>Contact Form</h3>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">USA</option>
+      <option value="canada">Canada</option>
+      <option value="usa">Mexico</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
